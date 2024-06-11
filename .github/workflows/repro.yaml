@@ -16,6 +16,12 @@ jobs:
     #   options: --cpus 8
     steps:
       - uses: actions/checkout@v3
+      - name: Setup timezone
+        uses: MathRobin/timezone-action@v1.1
+        with:
+          timezoneLinux: America/Montreal
+      - name: Update timezone
+        run: sudo ln -f -s /usr/share/zoneinfo/America/Montreal /etc/localtime
       - name: Setup node
         uses: actions/setup-node@v4
         with:
