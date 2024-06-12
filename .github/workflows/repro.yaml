@@ -27,16 +27,15 @@ jobs:
           timezoneLinux: America/Montreal
       - name: Update timezone
         run: sudo ln -f -s /usr/share/zoneinfo/America/Montreal /etc/localtime
-      - run: cd repo
       - name: Setup node
         uses: actions/setup-node@v4
         with:
           node-version: 20.11.0
           cache: 'yarn'
-          cache-dependency-path: ./yarn.lock
+          cache-dependency-path: ./repo/yarn.lock
       - run: ls -lta ~
       - run: ls -lta ~/.cache
       - run: ls -lta ~/.cache/yarn
       - run: ls -lta ~/.cache/yarn/v6
-      - run: yarn
-      - run: yarn workspace @project/web-app build
+      - run: cd repo && yarn
+      - run: cd repo && yarn workspace @project/web-app build
