@@ -33,5 +33,6 @@ jobs:
           cache-dependency-path: ./yarn.lock
       - run: ls -lta ~
       - run: ls -lta ~/.cache
+      - run: ls -lta ~/.cache/yarn
       - run: yarn
       - run: yarn workspace @project/web-app build
