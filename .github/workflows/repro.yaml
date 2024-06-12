@@ -34,5 +34,6 @@ jobs:
       - run: ls -lta ~
       - run: ls -lta ~/.cache
       - run: ls -lta ~/.cache/yarn
+      - run: ls -lta ~/.cache/yarn/v6
       - run: yarn
       - run: yarn workspace @project/web-app build
