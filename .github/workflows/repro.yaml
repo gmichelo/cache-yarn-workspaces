@@ -28,5 +28,6 @@ jobs:
           node-version: 20.11.0
           cache: 'yarn'
           cache-dependency-path: ./yarn.lock
+      - run: ls -lta ~
       - run: yarn
       - run: yarn workspace @project/web-app build
