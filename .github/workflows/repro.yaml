@@ -7,8 +7,11 @@ on:
 
 jobs:
   build:
+    strategy:
+      matrix:
+        runner: [namespace-profile-default, ubuntu-latest]
     runs-on:
-      - namespace-profile-default
+      - ${{ matrix.runner }}
     # container:
     #   image: node:20
     #   env:
@@ -29,5 +32,6 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: ./yarn.lock
       - run: ls -lta ~
+      - run: ls -lta ~/.cache
       - run: yarn
       - run: yarn workspace @project/web-app build
