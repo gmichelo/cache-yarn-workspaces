@@ -9,7 +9,7 @@ jobs:
   build:
     strategy:
       matrix:
-        runner: [namespace-profile-default, ubuntu-latest]
+        runner: [namespace-profile-with-caching]
     runs-on:
       - ${{ matrix.runner }}
     # container:
