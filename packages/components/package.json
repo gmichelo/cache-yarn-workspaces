@@ -5,8 +5,8 @@
     "license": "SEE LICENSE IN ../../LICENSE",
     "main": "src/index.ts",
     "peerDependencies": {
-      "classnames": "*",
-      "react": "*",
-      "typescript": "*"
+        "classnames": "*",
+        "react": "*",
+        "typescript": "*"
     }
-  }
+}
