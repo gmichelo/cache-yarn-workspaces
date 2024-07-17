@@ -22,7 +22,7 @@ jobs:
       - uses: namespacelabs/nscloud-cache-action@v1
         with: 
           cache: yarn
-          path: node_modules
+          path: node_modules, config/node_modules
       - uses: actions/setup-node@v4
         with:
           node-version: "20.11.1"
