@@ -34,7 +34,7 @@ jobs:
           node-version: "20.11.1"
           always-auth: false
           check-latest: false
-      - run: yarn install --immutable
+      - run: yarn install 
       # - name: Setup timezone
       #   uses: MathRobin/timezone-action@v1.1
       #   with:
