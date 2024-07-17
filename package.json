@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "nextjs-typescript-yarn-workspaces",
-  "version": "4.3.1",
+  "version": "v4.0.2",
   "main": "index.js",
   "license": "MIT",
   "workspaces": [
