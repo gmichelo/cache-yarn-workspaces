@@ -23,6 +23,7 @@ jobs:
         with: 
           cache: yarn
           path: node_modules
+      - run: yarn version
       - uses: actions/setup-node@v4
         with:
           node-version: "20.11.1"
