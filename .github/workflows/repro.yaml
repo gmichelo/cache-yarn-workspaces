@@ -30,6 +30,11 @@ jobs:
           always-auth: false
           check-latest: false
       - run: yarn install --immutable
+      - name: Breakpoint on failure
+        uses: namespacelabs/breakpoint-action@v0
+        with:
+          duration: 30m
+          authorized-users: edganiukov,hugosantos,n-g,htr,nichtverstehen,gmichelo,attilaolah,pavolmarko
       # - name: Setup timezone
       #   uses: MathRobin/timezone-action@v1.1
       #   with:
