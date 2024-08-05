@@ -25,7 +25,8 @@
     "@types/react-dom": "^18",
     "@types/resolve": "^1",
     "@types/shelljs": "^0",
-    "@types/ws": "^8"
+    "@types/ws": "^8",
+    "typescript": "^5.5.4"
   },
   "packageManager": "yarn@1.0.0",
   "dependencies": {
